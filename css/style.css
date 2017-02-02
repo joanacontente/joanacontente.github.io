@@ -1,0 +1,134 @@
+body,
+html, ul {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 48px;
+  color: #313131;
+  background-color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+   list-style: none;
+}
+
+ .container {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+.header-pic {
+    border-radius: 50%;
+    margin-top: 10%;
+}   
+
+p {
+  font-size: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  color: #2E2A2A;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  color: #2E2A2A;
+  padding-top: 5px;
+font-family: 'Roboto Mono', monospace;
+}
+
+
+/* Media Icons */
+.icons {
+  text-align: center;
+}
+
+i:hover {
+  text-decoration: none;
+  transform: scale(1.5, 1.5);
+}
+
+
+.about {
+  width: 50%;
+  height: 650px;
+  float: left;
+}
+
+.about h1 {
+  margin-top: 250px;
+}
+
+.about-description {
+  opacity:0;
+  transition:opacity 0.7s linear;
+  text-align: center;
+
+}
+
+.about-description:hover {
+  opacity: 1;
+  text-align: center;
+  cursor: e-resize;
+}
+
+.about h1:hover {
+  cursor: help;
+}
+
+.front {
+  width: 50%;
+  float: right;
+  height: 650px;
+  background-image: url("../images/joanacontente.jpg");
+  background-size: cover;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
+
+.front:hover {
+  transform: rotateY(180deg);
+  background-image: none;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+  border: 2px solid black;
+  width: 80%;
+  height: 90%;  
+  margin: 20px;
+}
+
+.back h1 {
+  font-size: 16px;
+font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  color:#0BA343;
+}
+
+.back li, p {
+  font-size: 14px;
+  padding: 12px;
+font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+
+
+
+
